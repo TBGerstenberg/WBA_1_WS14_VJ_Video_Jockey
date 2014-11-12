@@ -1,0 +1,285 @@
+// Styleinformationen für die WBA Website
+
+
+* {
+	background-color: black;
+}
+
+/* Default werte für alle Elemente */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+header{
+	z-index: 1;
+	width: 100%;
+	padding-bottom: 25px;
+}
+
+/*Top Navigation höhe und Farbe zuweisen. */
+#topnavigation {
+	background-color : #eee;
+	height : 75px;
+
+}
+
+#logo{
+	/*Logo links im Header anzeigen */
+	float: left;
+}
+/* Das Image liegt über der Topnavigation(z-index) */
+#logoImage{
+	z-index: 2;
+	width: 75px;
+	height: 75px;
+}
+
+h1{
+	font-size: 28pt;
+	color: #83F52C;
+	font-style: italic;
+	font-family: Courier;
+	text-shadow: 1px 1px white, -1px -1px white;
+
+	
+}
+
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+} 
+
+
+#Vorschau1{
+	margin-left: 5px;
+	background-color: #DDD;
+	float: left;
+	height: 100px;
+}
+
+#Vorschau2{
+	margin-right: 5px;
+	background-color: #DDD;
+	float: right;
+	height: 100px;
+
+}
+
+/* Slider Div wird höhe zugewiesen, damit das folgende Div sich darunter platziert */
+.slider{
+	display: block;
+}
+
+/* Die Slider von Video1 unter diesem Platzieren */
+#sliderVideo1{
+	background: grey;
+	float: left;
+	margin-left: 160px;
+	z-index: 10;
+}
+/* Die Slider von Video2 unter diesem Platzieren */
+#sliderVideo2{
+	background: grey;
+	float: right;
+	margin-right: 160px;
+	z-index: 10;
+}
+/* Die slider von video1 platzieren sich immer mit abstand von 10px zueinander. */
+.sliderv1{
+	margin: 10px;
+	float: left;
+}
+/* Die slider von video1 platzieren sich immer mit abstand von 10px zueinander. */
+.sliderv2{
+	margin: 10px;
+	float: left;
+}
+
+/* Video1 + zugehörige Buttons platzieren sich mit abstand von 50px am Linken Bildschirmrand */
+#ErsteBox{
+	background-color: #000;
+	border-style: ridge;
+	border-color: #83F52C;
+	border-width: 5px;
+	margin-top: 50px;
+	float: left;
+	margin-left: 50px;
+	width: 640px;
+	height: 480px;
+	z-index: 2;
+
+}
+/* Video 2 + zugehörige Buttons platzieren sich wenn möglich rechts neben Video1, sonst rechts versetzt dortdrunter */
+#ZweiteBox{
+	background-color: #000;
+	border-style: ridge;
+	border-color: #83F52C;
+	border-width: 5px;
+	margin-top: 50px;
+	float: right;
+	margin-right: 50px;
+	width: 640px;
+	height: 480px;
+	z-index: 2;
+}
+/* Farben für die Sliderknöpfe */
+#sliderVid1Red.ui-widget-content .ui-state-default{
+ 	background: #ff1426; 
+}
+#sliderVid1Green.ui-widget-content .ui-state-default{
+	background: #14ff28;
+}
+#sliderVid1Blue.ui-widget-content .ui-state-default{
+	background: #1422ff;
+}
+#sliderVid2Red.ui-widget-content .ui-state-default{
+ 	background: #ff1426; 
+}
+#sliderVid2Green.ui-widget-content .ui-state-default{
+	background: #14ff28;
+}
+#sliderVid2Blue.ui-widget-content .ui-state-default{
+	background: #1422ff;
+}
+
+
+/*Icons für die anderen Slider */
+#sliderVid1 .ui-slider-handle{
+	background:url(resources/Icons/speed3_icon.png)no-repeat;
+}
+
+#sliderVid1Opacity .ui-slider-handle{
+	background:url(resources/Icons/eye2_icon.png)no-repeat;
+}
+
+#sliderVid1Volume .ui-slider-handle{
+	background:url(resources/Icons/speaker_icon.png)no-repeat;
+}
+
+#sliderVid2 .ui-slider-handle{
+	background:url(resources/Icons/speed3_icon.png)no-repeat;
+}
+
+#sliderVid2Opacity .ui-slider-handle{
+	background:url(resources/Icons/eye2_icon.png)no-repeat;
+}
+
+#sliderVid2Volume .ui-slider-handle{
+	background:url(resources/Icons/speaker_icon.png)no-repeat;
+}
+
+
+/* Position und grösse für Manipuliertes Video festlegen */
+#videomixed{
+	margin-top: 20px;
+	height: 480px;
+	width: 650px; 
+    padding: 15px; 
+    border: #83F52C;
+    border-style: ridge;
+    border-width: 8px; 
+    margin: 50px auto; 
+}
+
+#K1{
+	float: left;
+	position: absolute;
+	margin-left: 90px;
+	margin-top: -13px;
+	z-index: 1;
+}
+
+#K2{
+	float: right;
+	margin-right: 90px;
+	margin-top: -93px;
+	z-index: 1;
+}
+#KabelOben{
+	margin-top: -6px;
+	margin-bottom: -57px;
+	margin-left: 50px;
+
+
+}
+#kabelobenrechts{
+	float:right;
+	margin-top: -112px;
+	margin-right: 50px
+}
+
+
+
+/* Die Buffer canvas werden nicht angezeigt */
+#canvasBuffer {
+	display: none;
+}
+#canvasBuffer2 {
+	display: none;
+}
+
+/* Die beiden Canvas werden übereinander angezeigt */
+#canvasDraw {
+	background: #000;
+	position: absolute;
+}
+#canvasDraw2{
+	
+	position: absolute;
+}
+
+/* Footer geht über die ganze Breite, höhe und Farbe werden angegeben */
+#footer {
+	background-color : #83F52C;
+	height : 75px;
+	width: 100%;
+}
+/* Style informationen über die Buttons */
+
+.Button {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #00ff00), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #00ff00 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #00ff00 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #00ff00 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #00ff00 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #00ff00 5%, #77a809 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff00', endColorstr='#77a809',GradientType=0);
+	background-color:#00ff00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+.Button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #00ff00));
+	background:-moz-linear-gradient(top, #77a809 5%, #00ff00 100%);
+	background:-webkit-linear-gradient(top, #77a809 5%, #00ff00 100%);
+	background:-o-linear-gradient(top, #77a809 5%, #00ff00 100%);
+	background:-ms-linear-gradient(top, #77a809 5%, #00ff00 100%);
+	background:linear-gradient(to bottom, #77a809 5%, #00ff00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#00ff00',GradientType=0);
+	background-color:#77a809;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}
