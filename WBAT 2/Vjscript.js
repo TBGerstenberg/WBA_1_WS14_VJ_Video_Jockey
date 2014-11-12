@@ -105,7 +105,8 @@ $(function() {
       min: 0,
       max: 3,
       step: 0.25,
-      orientation: "vertical",  
+      orientation: "vertical", 
+      value: 1, 
       slide: function(event, ui){
         video1.playbackRate=ui.value;
       }               
@@ -159,9 +160,9 @@ $(function() {
     $( "#sliderVid1Opacity" ).slider({ 
       min: -255,
       max: 1,
-      step: 1,
+      step: 0.01,
+      value: -128,
       orientation: "vertical", 
-      value: video1Opacity, 
       slide: function(event, ui){
         video1Opacity=ui.value;
       }               
@@ -173,9 +174,9 @@ $(function() {
     $( "#sliderVid1Volume" ).slider({ 
       min: 0,
       max: 1,
-      step: 0.1,
-      orientation: "vertical", 
-      value: video1Volumne, 
+      step: 0.05,
+      value: 0.5,
+      orientation: "vertical",  
       slide: function(event, ui){
         video1.volume=ui.value;
       }               
@@ -188,6 +189,7 @@ $(function() {
       min: 0,
       max: 3,
       step: 0.25,
+      value: 1,
       orientation: "vertical", 
       slide: function(event, ui){
         video2.playbackRate=ui.value;
@@ -243,22 +245,22 @@ $(function() {
       min: -255,
       max: 1,
       step: 1,
+      value: -128,
       orientation: "vertical", 
-      value: video2Opacity, 
       slide: function(event, ui){
         video2Opacity=ui.value;
       }               
       });
   });
 
-//Video 2 Geschindigkeit 
+//Video 2 Volume
 $(function() {
     $( "#sliderVid2Volume" ).slider({ 
       min: 0,
       max: 1,
-      step: 0.1,
+      step: 0.05,
       orientation: "vertical", 
-      value: video2Volumne, 
+      value: 0.5, 
       slide: function(event, ui){
         video2.volume=ui.value;
       }               
@@ -473,4 +475,16 @@ function playSound4(){
 
 function playSound5(){
   sound5.play();
+}
+function setNegativeFilter1(){
+  negativeFilter1=!negativeFilter1;
+}
+function setNegativeFilter2(){
+  negativeFilter2=!negativeFilter2;
+}
+function setGreyFilter1(){
+  greyFilter1=!greyFilter1;
+}
+function setGreyFilter2(){
+  greyFilter2=!greyFilter2;
 }

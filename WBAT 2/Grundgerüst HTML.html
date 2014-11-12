@@ -161,8 +161,6 @@
 
                 <center>
 
-                <div id="videobox" class="clearfix">
-                    
                         <!-- Video1 zum mischen einbetten -->
                         <div id="ErsteBox">
 
@@ -184,14 +182,13 @@
                             URL: <input id="url1" type="url"><br>
                             <input type="button" onclick="write()" value="Please Write the URL"> -->
                            
-
                             <video id="video1" class="video" width="320" height"240">
                             <source src="" type?"video/mp4" />
                             </video>
                             
 
                                 <!-- Slider für das Video1-->
-                                <div id="sliderVideo1" class="slider">
+                                <div id="sliderVideo1">
                                     
                                     <div id="sliderVid1Red" class="sliderv1"></div>
                                     <div id="sliderVid1Blue" class="sliderv1"></div>
@@ -199,6 +196,18 @@
                                     <div id="sliderVid1Opacity" class="sliderv1"></div>
                                     <div id="sliderVid1Volume" class="sliderv1"></div>
                                     <div id="sliderVid1" class="sliderv1"></div>
+                                </div>
+
+                                <div id="InputBox">
+
+                                    <button class="Button" onclick="setNegativeFilter1()" id="setNegative1">
+                                    Negative Toggle
+                                    </button>
+
+                                    <button class="Button" onclick="setGreyFilter1()" id="setGrey1">
+                                    Grey Toggle
+                                    </button>
+
                                 </div>
                         </div>
 
@@ -223,7 +232,7 @@
                             <source src="" type?"video/mp4" />
                             </video>
 
-                        <div id="sliderVideo2" class="slider">
+                        <div id="sliderVideo2">
                            
                             <div id="sliderVid2Red" class="sliderv2"></div>
                             <div id="sliderVid2Blue" class="sliderv2"></div>
@@ -233,29 +242,39 @@
                             <div id="sliderVid2" class="sliderv2"></div>
                         </div>
 
+                         <div id="InputBox">
+
+                                <button class="Button" onclick="setNegativeFilter2()" id="setNegative2">
+                                Negative Toggle
+                                </button>
+
+                                <button class="Button" onclick="setGreyFilter2()" id="setGrey2">
+                                Grey Toggle
+                                </button>
+
+                                </div>
+
                         </div>
+
+                    
                         
-                </div>
+               
 
                         
 
-              
+              </center>
 
+                
+                
 
+                <img id="K1" src="KABELDJLINKS.png" alt="Problem">
+               
 
-                </center>
+                <img id="K2" src="KABELDJ.png" alt="Problem">
 
-                <div id="kabellinks">
-                    <img id="K1" src="KABELDJLINKS.png" alt="Problem">
-                </div>
-            <center>
-                <button class="Button" onclick="copy()">
+                <button id="MIX"class="Button" onclick="copy()">
                 Start mixing!
                 </button>
-            </center>
-               
-                    <img id="K2" src="KABELDJ.png" alt="Problem">
-                
 
                 <!-- Manipuliertes Video -->
                 <div id="videomixed">
@@ -332,9 +351,9 @@
 
         </div>
 
-        <footer class="clearfix">
+        <footer>
             <div id="footer">
-                Diese Seite entsteht im rahmen eines Projekts für das Fach Webbasierte Anwendungen 1 an der Fachhochschue Köln Campus Gummersbach <!-- Hier evtl Copyright Info , Beschreibung das dieses Projekt für WBA entstanden ist -->
+                <center><h2>Diese Seite entstand im rahmen eines Projekts für das Fach Webbasierte Anwendungen 1 an der Fachhochschue Köln Campus Gummersbach</h2></center> <!-- Hier evtl Copyright Info , Beschreibung das dieses Projekt für WBA entstanden ist -->
             </div>
     
 
