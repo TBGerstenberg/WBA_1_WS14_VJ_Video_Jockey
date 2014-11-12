@@ -22,6 +22,17 @@ Evil Laugh:
   http://soundbible.com/1981-Evil-Laugh-2.html  
 
 Count off :  
-  http://soundbible.com/1971-Count-Off.html
+  http://soundbible.com/1971-Count-Off.html  
+
+Videos:  
+
+3 Tage wach :   
+http://www.youtube.com/watch?v=Gbk5El-kY_0  
+
+Lord of the Weed  :
+http://www.youtube.com/watch?v=xEGROs13EI4
+
+TV Total Nippel Mix :   
+
 
   
