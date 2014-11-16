@@ -1,3 +1,4 @@
+
 var video1;
 var video2;
 
@@ -279,7 +280,7 @@ function copy(){
     setNegative(bilddaten,bufferCanvasWidth,bufferCanvasHeight,video1Red,video1Green,video1Blue,video1Opacity);
     }
     else if(greyFilter1){
-    setGrey(bilddaten,bufferCanvas2Width,bufferCanvas2Height,video2Red,video2Green,video2Blue,video2Opacity);  
+    setGrey(bilddaten,bufferCanvasWidth,bufferCanvasHeight,video1Red,video1Green,video1Blue,video1Opacity);  
     }
     else{
     setColor(bilddaten,bufferCanvasWidth,bufferCanvasHeight,video1Red,video1Green,video1Blue,video1Opacity);  

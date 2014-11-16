@@ -1,16 +1,18 @@
 // Styleinformationen für die WBA Website
 
+*{
 
-* {
-	background-color: black;
 }
 
+/* Hintergrund Farbe */
+body{
+	background-color: white;
+}
 /* Default werte für alle Elemente */
 * {
 	padding: 0;
 	margin: 0;
 }
-
 
 header{
 	z-index: 1;
@@ -36,6 +38,7 @@ header{
 	height: 75px;
 }
 
+/* Style Informationen h1 */
 h1{
 	font-size: 28pt;
 	color: #83F52C;
@@ -45,6 +48,7 @@ h1{
 
 	
 }
+/* Style Informationen für h2 */
 h2{
 	font-size: 14pt;
 	color: #000;
@@ -53,15 +57,6 @@ h2{
 	text-shadow: 1px 1px white, -1px -1px white;
 
 }
-
- /* .clearfix:after{
-	display: block;
-	clear: both;
-	content: ".";
-	height: 0;
-	visibility: hidden;
-} */
-
 
 #Vorschau1{
 	margin-left: 5px;
@@ -78,10 +73,7 @@ h2{
 
 }
 
-/* Slider Div wird höhe zugewiesen, damit das folgende Div sich darunter platziert 
-.slider{
-	display: block;
-} */
+
 
 /* Die Slider von Video1 unter diesem Platzieren */
 #sliderVideo1{
@@ -324,8 +316,4 @@ h2{
 	background-color:#77a809;
 }
 .Button:active {
-	
-	/*
-	position:relative;
-	top:1px; */
 }
